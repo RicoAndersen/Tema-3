@@ -1,15 +1,25 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Franklin', sans-serif;
+}
 body{
   background-color: #f8f8f8;
 }
 .RAheader img{
   float: left;
+  padding-left: 10px;
 }
 .RAheader h1{
   background-color: #1B1D1E;
   color: #E6CD62;
   text-align: center;
-  padding-top: 55px;
-  font-family: sail;
+  padding-top: 28px;
+  font-family: 'sail';
+  padding-right: 10px;
+  padding-bottom: 32px;
+  margin: 0;
 }
 .RAheader{
   position: relative;
@@ -33,4 +43,7 @@ body{
 }
 .RAnavbar li{
   float: left;
+}
+.active{
+  background-color: #4a0a1a;
 }
