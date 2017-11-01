@@ -9,7 +9,6 @@ body{
 }
 .RAheader img{
   float: left;
-  padding-left: 10px;
 }
 .RAheader h1{
   background-color: #1B1D1E;
@@ -50,4 +49,10 @@ body{
 .RAfooter{
   color: #e6cd62;
   background-color: #1b1d1e;
+}
+.RAtekst{
+  margin-top: 20px;
+}
+.RAtekst img{
+  float: left;
 }
