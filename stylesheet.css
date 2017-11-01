@@ -1,10 +1,36 @@
 body{
   background-color: #f8f8f8;
 }
-.RAnavbar{
-  background-color: black;
-  overflow: hidden;
+.RAheader img{
+  float: left;
 }
-h1{
+.RAheader h1{
   background-color: #1B1D1E;
+  color: #E6CD62;
+  text-align: center;
+  padding-top: 55px;
+  font-family: sail;
+}
+.RAheader{
+  position: relative;
+}
+.RAnavbar{
+  background-color: #631025;
+}
+.RAnavbar a{
+  color: #E6CD62;
+  text-decoration: none;
+  text-align: center;
+  font-size: 11px;
+  display: block;
+  padding: 16px;
+}
+.RAnavbar ul{
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.RAnavbar li{
+  float: left;
 }
