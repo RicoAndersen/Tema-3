@@ -1,31 +1,41 @@
+/*Her er det som styrer den almindelige font og padding/margin*/
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Libre Franklin', sans-serif;
 }
+/*Her er det som ændrer baggrundsfarven*/
 body{
   background-color: #f8f8f8;
 }
-.RAheader img{
+/*Her er billedet i headeren*/
+  header img{
   float: left;
+  height: 89px;
+  width: auto;
 }
-.RAheader h1{
-  background-color: #1B1D1E;
+/*Her er overskriften i headeren*/
+  header h1{
   color: #E6CD62;
   text-align: center;
-  padding-top: 28px;
   font-family: 'sail';
-  padding-right: 10px;
-  padding-bottom: 32px;
-}
-.RAheader{
   position: relative;
+  top: 35%;
 }
-.RAnavbar{
-  background-color: #631025;
+/*Her er headerens position*/
+  header{
+  background-color: #1b1d1e;
+  position: relative;
+  height: 89px;
+  width: 100%;
 }
-.RAnavbar a{
+/*Her er det billede som vises i desktop*/
+  header #logodesk{
+  display: none;
+}
+/*Her er navigationbarens links og hvordan de står*/
+a{
   color: #E6CD62;
   text-decoration: none;
   text-align: center;
@@ -33,26 +43,35 @@ body{
   display: block;
   padding: 16px;
 }
-.RAnavbar ul{
+/*Her er navigationsbarens liste, hvilket er blevet horisontal*/
+ ul{
+  background-color: #631025;
   list-style-type: none;
   overflow: hidden;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
-.RAnavbar li{
+/*Her er navigationsbarens forskellige listegenstande, og de er alle sat til venstre side*/
+li{
   float: left;
+  width: 25%;
 }
+/*Denne del af navigationsbaren gør at det link man er inde på har en anden farve end de andre links*/
 .active{
   background-color: #4a0a1a;
 }
+/*Her er teksten i midten af siden*/
 .RAtekst{
   margin-top: 20px;
   padding-bottom: 40px;
 }
+/*Her er alle billederne til midten af siden*/
 .RAtekst img{
   float: left;
 }
-.RAfooter{
+/*Her er footeren og hvordan den skal være*/
+  footer{
   color: #e6cd62;
   background-color: #1b1d1e;
   position: relative;
@@ -61,9 +80,46 @@ body{
   height: auto;
   text-align: right;
 }
-.RAfooter p{
+/*Her er al det som står i footeren*/
+  footer p{
   font-family:'Yantramanav', sans-serif;
 }
-.RAfooter img{
+/*Her er alle billerne i footeren sat til venstre side*/
+  footer img{
   float: left;
+}
+/*Her ændrer skærmen sig når den når en bestemt skærmstørrelse*/
+@media screen and (min-width: 768px){
+  header{
+    height: 217px;
+    width: 100%;
+  }
+  header h1{
+    font-size: 70px;
+    position: relative;
+    top: 35%;
+  }
+  /*Her bliver det gamle logo til mobil fjernet*/
+  header img {
+  display: none;
+}
+/*Her kommer det nye logo til desktop frem*/
+  header #logodesk{
+  display: block;
+  height: 217px;
+  width: auto;
+}
+li{
+  float: left;
+  width: 100px;
+}
+p{
+  font-size: 25px;
+}
+h3{
+  font-size: 33px;
+}
+footer p{
+  font-size: 35px;
+}
 }
