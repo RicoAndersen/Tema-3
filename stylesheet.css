@@ -66,13 +66,15 @@ li{
   margin-top: 20px;
   padding-bottom: 40px;
 }
+p, h3{
+  color: #95989A;
+}
 /*Her er alle billederne til midten af siden*/
 .RAtekst img{
   float: left;
 }
 /*Her er footeren og hvordan den skal være*/
   footer{
-  color: #e6cd62;
   background-color: #1b1d1e;
   position: relative;
   bottom: 0;
@@ -83,11 +85,12 @@ li{
 /*Her er al det som står i footeren*/
   footer p{
   font-family:'Yantramanav', sans-serif;
+  color: #e6cd62;
 }
 /*Her er alle billerne i footeren sat til venstre side*/
   footer img{
   float: left;
-}
+} 
 /*Her ændrer skærmen sig når den når en bestemt skærmstørrelse*/
 @media screen and (min-width: 768px){
   header{
